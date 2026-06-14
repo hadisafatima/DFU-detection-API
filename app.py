@@ -122,7 +122,7 @@ MODEL_PATH = "dfu_model.h5"
 GDRIVE_FILE_ID = "185gd4jyOOH4kaUlD_2FfHSD9pDqew-hk"
 
 if not os.path.exists(MODEL_PATH):
-    print("Downloading model from Google Drive...")
+    print("Downloading latest model from Google Drive...")
     gdown.download(
         f"https://drive.google.com/uc?id={GDRIVE_FILE_ID}",
         MODEL_PATH,
